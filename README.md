@@ -1,0 +1,2 @@
+# How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface
+the world of robotics, providing a seamless control interface is crucial. Modern control goes beyond traditional buttons, extending to voice commands that make interaction much more natural and efficient. In this article, we will walk through the steps of building a simple web interface to control a robot, integrating Speech Recognition technology 
