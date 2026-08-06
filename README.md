@@ -20,13 +20,18 @@ Inside the index.html file, we build the basic structure of the interface. The l
 ![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1944.png)
 ![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1945.png)
 ![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1946.png)
-![img alt]()
+
 
 ### الخطوة الثالثة: برمجة دالة إرسال الأوامر للسيرفر
 الآن نأتي إلى الجانب البرمجي باستخدام JavaScript. الخطوة الأهم هي إنشاء دالة sendCommand المسؤولة عن أخذ الأمر (مثل الحرف 'f' للتقدم للأمام) وإرساله إلى ملف PHP موجود على الخادم (وهو update_command.php). نستخدم تقنية fetch لإرسال هذه البيانات في الخلفية دون الحاجة لتحديث الصفحة، مع تحديث نص الحالة في أسفل الشاشة لإخبار المستخدم بنجاح الإرسال.
 
 ### Step 3: Programming the Server Communication Function
 Now we move on to the logic using JavaScript. The most important step is creating the sendCommand function. This function is responsible for taking a command code (like 'f' for forward) and sending it to a PHP file on the server (update_command.php). We use the fetch API to send this data in the background without refreshing the page, while updating the status text at the bottom to notify the user of a successful transmission.
+
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/bac464c75d88a840cff545f5edd572f66f702c6e/IMG_1950.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/bac464c75d88a840cff545f5edd572f66f702c6e/IMG_1947.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/bac464c75d88a840cff545f5edd572f66f702c6e/IMG_1948.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/bac464c75d88a840cff545f5edd572f66f702c6e/IMG_1949.png)
 
 
 ### الخطوة الرابعة: تفعيل ميزة التعرف على الصوت
