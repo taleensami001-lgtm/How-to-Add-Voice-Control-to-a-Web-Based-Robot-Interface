@@ -13,6 +13,33 @@ To start coding, you need to access the File Manager of your web hosting service
 ### Step 2: Building and Styling the User Interface
 Inside the index.html file, we build the basic structure of the interface. The layout consists of a grid of directional buttons (forward, backward, right, left, stop), a dedicated button to activate the microphone, and a status text element at the bottom. Using CSS, we style and arrange the buttons using a Grid layout to make them clear and user-friendly, giving the voice button a distinct color (like green).
 
-
+![img alt]()
 ### الخطوة الثالثة: برمجة دالة إرسال الأوامر للسيرفر
 الآن نأتي إلى الجانب البرمجي باستخدام JavaScript. الخطوة الأهم هي إنشاء دالة sendCommand المسؤولة عن أخذ الأمر (مثل الحرف 'f' للتقدم للأمام) وإرساله إلى ملف PHP موجود على الخادم (وهو update_command.php). نستخدم تقنية fetch لإرسال هذه البيانات في الخلفية دون الحاجة لتحديث الصفحة، مع تحديث نص الحالة في أسفل الشاشة لإخبار المستخدم بنجاح الإرسال.
+
+### Step 3: Programming the Server Communication Function
+Now we move on to the logic using JavaScript. The most important step is creating the sendCommand function. This function is responsible for taking a command code (like 'f' for forward) and sending it to a PHP file on the server (update_command.php). We use the fetch API to send this data in the background without refreshing the page, while updating the status text at the bottom to notify the user of a successful transmission.
+
+
+### الخطوة الرابعة: تفعيل ميزة التعرف على الصوت
+لجعل الروبوت يستمع لأوامرك، نستخدم واجهة برمجة التطبيقات SpeechRecognition المدمجة في المتصفحات الحديثة.
+
+نقوم أولاً بتهيئة الخدمة وضبط اللغة على الإنجليزية en-US لأننا سنستخدم كلمات مثل (forward, stop).
+
+نربط تشغيل الميكروفون بحدث الضغط على زر "التحكم بالصوت".
+
+عندما ينتهي المستخدم من التحدث، يلتقط الكود الكلمة، يزيل الفراغات ويحولها إلى أحرف صغيرة، ثم يطابقها مع الأوامر المتاحة.
+
+إذا طابقت الكلمة أحد الأوامر المبرمجة، يتم استدعاء دالة sendCommand تلقائياً لإرسال الأمر للروبوت.
+
+
+### Step 4: Activating the Speech Recognition Feature
+To make the robot listen to your commands, we utilize the SpeechRecognition API built into modern web browsers.
+
+First, we initialize the service and set the language to English (en-US) since we will be using words like "forward" and "stop".
+
+We link the microphone activation to a click event on the "Voice Control" button.
+
+Once the user finishes speaking, the code captures the transcript, removes extra spaces, converts it to lowercase, and matches it against available commands.
+
+If the spoken word matches a programmed command, the sendCommand function is automatically called to send the instruction to the robot.
