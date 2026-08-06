@@ -43,3 +43,27 @@ We link the microphone activation to a click event on the "Voice Control" button
 Once the user finishes speaking, the code captures the transcript, removes extra spaces, converts it to lowercase, and matches it against available commands.
 
 If the spoken word matches a programmed command, the sendCommand function is automatically called to send the instruction to the robot.
+
+### الخطوة الخامسة: إعداد الخادم واختبار الأوامر في قاعدة البيانات
+الآن نقوم بإعداد ملف المعالجة الخلفية update_command.php وتعديله في مدير الملفات لضمان استقبال الأوامر بأمان وإرسالها لقاعدة البيانات.
+(أضف الصور image_11.png، image_15.png، image_16.png، و image_17.png هنا لتوضيح الكود البرمجي لملف PHP وتواجده في مدير الملفات)
+
+بعد ذلك، نختبر الواجهة عملياً بالتحدث بأوامر مثل "left" أو "right"، وسنلاحظ ظهور رسالة تأكيد التحديث أسفل الزر.
+(أضف الصور image_12.png، image_13.png، و image_14.png هنا لتوضيح استجابة الواجهة للأوامر الصوتية)
+
+أخيراً، نتحقق من جدول robot_state في قاعدة البيانات للتأكد من تسجيل الحرف المرسل وتحديث وقت الاستجابة بنجاح، مما يعني أن الروبوت أصبح جاهزاً لقراءة الأوامر وتنفيذها.
+
+### Step 5: Server Configuration and Database Testing
+Now, we configure the backend processing file update_command.php and edit it within the File Manager to ensure it securely receives commands and routes them to the database.
+(Insert images image_11.png, image_15.png, image_16.png, and image_17.png here to show the PHP code and its location in the file manager)
+
+Next, we practically test the interface by speaking commands such as "left" or "right", and we will see a success confirmation message below the button.
+(Insert images image_12.png, image_13.png, and image_14.png here to demonstrate the UI responding to voice commands)
+
+Finally, we check the robot_state table in the database to verify that the sent character is logged and the timestamp is updated successfully, meaning the robot is ready to read and execute the commands.
+
+### خاتمة:
+بهذه الخطوات، تمكنت من تحويل واجهة تحكم تقليدية إلى واجهة ذكية تستجيب للأوامر الصوتية، وترتبط بشكل متكامل ومباشر مع قاعدة البيانات. هذا الإنجاز يجعل نظام التحكم جاهزاً للتكامل مع مشاريع الهاردوير المتقدمة – مثل تحريك وتوجيه كلب آلي (Robot Dog) – ليصبح التفاعل أكثر مرونة واحترافية!
+
+### Conclusion:
+With these steps, you have successfully transformed a traditional control panel into a smart interface that responds to voice commands and connects directly to a backend database. This achievement makes the control system fully prepared to integrate with advanced hardware projects—such as navigating a robotic dog—making the interaction much more flexible and professional
