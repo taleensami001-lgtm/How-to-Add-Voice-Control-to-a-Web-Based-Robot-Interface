@@ -70,7 +70,7 @@ Now, we configure the backend processing file update_command.php and edit it wit
 Next, we practically test the interface by speaking commands such as "left" or "right", and we will see a success confirmation message below the button.
 Finally, we check the robot_state table in the database to verify that the sent character is logged and the timestamp is updated successfully, meaning the robot is ready to read and execute the commands.
 
-![img alt]()
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/46e4d89f2eda6e0231adc036d4ab8ed5b16504b8/IMG_1954.jpeg)
 
 ### خاتمة:
 بهذه الخطوات، تمكنت من تحويل واجهة تحكم تقليدية إلى واجهة ذكية تستجيب للأوامر الصوتية، وترتبط بشكل متكامل ومباشر مع قاعدة البيانات. هذا الإنجاز يجعل نظام التحكم جاهزاً للتكامل مع مشاريع الهاردوير المتقدمة – مثل تحريك وتوجيه كلب آلي (Robot Dog) – ليصبح التفاعل أكثر مرونة واحترافية!
