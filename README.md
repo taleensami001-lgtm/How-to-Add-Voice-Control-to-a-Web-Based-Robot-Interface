@@ -13,7 +13,15 @@ To start coding, you need to access the File Manager of your web hosting service
 ### Step 2: Building and Styling the User Interface
 Inside the index.html file, we build the basic structure of the interface. The layout consists of a grid of directional buttons (forward, backward, right, left, stop), a dedicated button to activate the microphone, and a status text element at the bottom. Using CSS, we style and arrange the buttons using a Grid layout to make them clear and user-friendly, giving the voice button a distinct color (like green).
 
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1940.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1941.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1942.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1943.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1944.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1945.png)
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/c043562e243084c7e0f8a546e91c1278e8d0a11d/IMG_1946.png)
 ![img alt]()
+
 ### الخطوة الثالثة: برمجة دالة إرسال الأوامر للسيرفر
 الآن نأتي إلى الجانب البرمجي باستخدام JavaScript. الخطوة الأهم هي إنشاء دالة sendCommand المسؤولة عن أخذ الأمر (مثل الحرف 'f' للتقدم للأمام) وإرساله إلى ملف PHP موجود على الخادم (وهو update_command.php). نستخدم تقنية fetch لإرسال هذه البيانات في الخلفية دون الحاجة لتحديث الصفحة، مع تحديث نص الحالة في أسفل الشاشة لإخبار المستخدم بنجاح الإرسال.
 
