@@ -6,7 +6,7 @@
 
 To start coding, you need to access the File Manager of your web hosting service. From there, locate your main interface file, usually named index.html. Right-click on the file and select "Edit" to open the code editor.
 
-![img alt]()
+![img alt](https://github.com/taleensami001-lgtm/How-to-Add-Voice-Control-to-a-Web-Based-Robot-Interface/blob/0d0456dbbffbcc8f7c46df9956ace65c9c20ed3c/IMG_1939.png)
 ### الخطوة الثانية: بناء واجهة المستخدم وتنسيقها
 داخل ملف index.html، نقوم ببناء الهيكل الأساسي للواجهة. تتكون الواجهة من شبكة أزرار للاتجاهات (أمام، خلف، يمين، يسار، توقف) بالإضافة إلى زر خاص لتفعيل الميكروفون، ونص في الأسفل لعرض حالة الاتصال. باستخدام CSS، نقوم بتنسيق الأزرار وترتيبها في شبكة (Grid) لتكون واضحة وسهلة الاستخدام، مع إعطاء زر الصوت لوناً مميزاً (مثل الأخضر).
 
